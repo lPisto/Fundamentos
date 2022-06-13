@@ -18,8 +18,9 @@ def repos():
             if STK[i] == 0:
                 REPOS.append(COD[i])
     if len(REPOS) < 20:
-        for i in range(20-len(COD)):
+        for i in range(20-len(REPOS)):
             REPOS.append(0)
+    print(REPOS)
 
 def ordenamiento():
     señal = 1
@@ -58,6 +59,7 @@ for i in range (150):
 
 stock = valStock()
 repos()
+
 ordenamiento()
 
 print("Valorizacion de stock: ", "$", stock)
